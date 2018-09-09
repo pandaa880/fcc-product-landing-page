@@ -1,0 +1,4 @@
+html {
+  @include fontMixin($font-normal);
+  line-height: 1.6;
+}

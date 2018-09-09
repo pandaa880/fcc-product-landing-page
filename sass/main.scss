@@ -4,10 +4,8 @@
 @import "./abstracts/_colors";
 @import "./abstracts/_type";
 
-// 2. Vendor Prefixes
-@import "./vendor/_normalize";
-
 // 3. Base Styles
+@import "./base/_base";
 
 // 4. Layout
 
