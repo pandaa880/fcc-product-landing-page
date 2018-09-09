@@ -1,0 +1,17 @@
+{
+  "name": "applicious-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass sass/main.scss -o css",
+    "watch:sass": "npm run build:sass && node-sass sass/main.scss -wo css",
+    "start": "npm run watch:sass"
+  },
+  "author": "pandaa",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
