@@ -1,0 +1,96 @@
+.main-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.logo {
+  width: 25%;
+  min-width: 10rem;
+  max-width: 15rem;
+}
+
+.main-nav.is-open {
+  left: 0;
+}
+
+.main-nav {
+  display: block;
+  font-size: 1.2rem;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  right: 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.main-nav {
+  background: $accent;
+  transition: all ease-in-out 500ms;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+
+    li {
+      flex: 1 1 auto;
+      border: 2px solid rgba(0, 0, 0, 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.nav-toggle {
+  display: block;
+  padding: 1em;
+  cursor: pointer;
+  z-index: 100;
+  // position: absolute;
+  // top: 1em;
+  // right: 2em;
+}
+
+.hamburger {
+  display: block;
+  background: $white;
+  width: 2em;
+  height: 3px;
+  transition: all ease-in-out 250ms;
+
+  &::before {
+    content: "";
+    transform: translateY(-6px);
+    display: block;
+    background: $white;
+    width: 2em;
+    height: 3px;
+    transition: all ease-in-out 250ms;
+  }
+
+  &::after {
+    content: "";
+    transform: translateY(3px);
+    display: block;
+    background: $white;
+    width: 2em;
+    height: 3px;
+    transition: all ease-in-out 250ms;
+  }
+}

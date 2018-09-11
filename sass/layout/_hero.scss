@@ -1,0 +1,52 @@
+.hero {
+  background: linear-gradient(to right, $main, $secondary);
+  color: $text-inverse;
+  padding: 8em 0;
+  text-align: center;
+}
+
+.hero-text {
+  margin-top: 10vmax;
+  padding-right: 1em;
+}
+
+.title-large {
+  font-weight: $font-black;
+  font-size: 3rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  span {
+    font-weight: $font-light;
+  }
+}
+
+.text-intro {
+  font-size: 1.2rem;
+}
+
+.img-div {
+  display: none;
+}
+
+// media queries
+
+@media (min-width: 768px) {
+  .hero {
+    text-align: left;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .img-div {
+    display: block;
+  }
+
+  .img-div img {
+    max-width: 100%;
+    height: auto;
+  }
+}
