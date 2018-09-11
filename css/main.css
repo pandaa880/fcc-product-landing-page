@@ -40,7 +40,7 @@ body {
 .btn--primary:hover,
 .btn--primary:focus {
   background: rgba(0, 0, 0, 0.5);
-  border: none; }
+  border: 2px solid rgba(0, 0, 0, 0); }
 
 .btn--secondary {
   border: 2px solid white;
