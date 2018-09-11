@@ -9,40 +9,39 @@
 
   <!--Styles-->
   <link rel="stylesheet" href="css/main.css">
-  <!--Font-Awesome Icons-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
 </head>
 
 <body>
   <!-- ==================================Header====================================== -->
   <header id="header" class="main-header">
-    <div class="container">
+    <div class="container header-container">
       <div class="logo">
         <img src="img/logo.svg" alt="Appilicous Logo" id="header-img">
       </div>
       <nav id="nav-bar" class="main-nav">
         <ul class="unstyled-list">
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#" class="nav-link">Blog</a></li>
           <li><a href="#" class="nav-link">Pricing</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
+      <div class="nav-toggle">
+        <div class="hamburger"></div>
+      </div>
     </div>
   </header>
 
   <!-- ==================================Hero====================================== -->
-  <section class="hero">
-    <div class="container">
+  <section id="home" class="hero">
+    <div class="container hero-container">
       <div class="hero-text">
         <h1 class="title-large"><span>Take your app to the</span> next level</h1>
-        <p class="text-intro">The perfect landing page for your app, whatever it might be. Show off the apps features,
-          show
-          some sexy pictures and get more people do download it today.</p>
+        <p class="text-intro">The perfect landing page for your app, whatever it might be. Show off the apps
+          features,show some sexy pictures and get more people do download it today.</p>
         <a href="" class="btn btn--secondary">Learn More</a>
-        <a href="" class="btn btn-primary">Get The App</a>
+        <a href="" class="btn btn--primary">Get The App</a>
       </div>
 
       <div class="img-div">
@@ -52,7 +51,7 @@
   </section>
 
   <!-- ==================================Sales Points====================================== -->
-  <section class="sales-points">
+  <section id="about" class="sales-points">
     <div class="container">
       <h1>Promote Your App</h1>
       <div class="sales-point">
@@ -103,7 +102,7 @@
   </section>
 
   <!-- ==================================CTA====================================== -->
-  <footer>
+  <footer id="contact">
     <div class="container">
       <p>Take your app to the next level</p>
       <ul class="social-links">
@@ -116,6 +115,7 @@
   </footer>
 
   <script src="https://use.fontawesome.com/4d6c13d979.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

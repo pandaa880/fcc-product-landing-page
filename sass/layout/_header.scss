@@ -1,0 +1,154 @@
+.main-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, $main, $secondary);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  // background: linear-gradient(to right, $main, $secondary);
+}
+
+.logo {
+  width: 25%;
+  min-width: 10rem;
+  max-width: 15rem;
+}
+
+.main-nav.is-open {
+  left: 0;
+}
+
+.main-nav {
+  display: block;
+  font-size: 1.2rem;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  right: 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-basis: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      // color: darken($accent, 0.5);
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.main-nav {
+  background: $accent;
+  transition: all ease-in-out 500ms;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+
+    li {
+      flex: 1 1 auto;
+      border: 2px solid rgba(0, 0, 0, 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.nav-toggle {
+  display: block;
+  padding: 1em;
+  cursor: pointer;
+  z-index: 100;
+  // position: absolute;
+  // top: 1em;
+  // right: 2em;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: $white;
+  width: 2em;
+  height: 3px;
+  transition: all ease-in-out 250ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.hamburger.is-open {
+  transform: rotate(45deg);
+
+  &::after {
+    transform: rotate(-90deg);
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
+// media queries
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    position: relative;
+    flex: 1 1 auto;
+    background: none;
+    left: 0;
+    margin: 0.4em 0 0 1em;
+
+    ul {
+      flex-direction: row;
+      height: auto;
+
+      li {
+        display: inline-block;
+        border: none;
+        text-align: right;
+      }
+
+      a {
+        background-color: transparent;
+        &:hover,
+        &:focus {
+          color: darken($accent, 0.5);
+          background-color: transparent;
+          // background: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav ul {
+    margin-top: 0.5em;
+  }
+}
