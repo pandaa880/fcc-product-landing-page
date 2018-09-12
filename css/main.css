@@ -55,7 +55,8 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, #048ca8, #16db93); }
+  background: linear-gradient(to right, #048ca8, #16db93);
+  z-index: 105; }
 
 .header-container {
   display: flex;
@@ -228,7 +229,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 3fr;
-    padding-bottom: 10em; }
+    padding-bottom: 1em; }
   .sales-container h1 {
     grid-column: 1 / 4;
     margin: 1em 0;
@@ -241,3 +242,91 @@ body {
 @media (min-width: 820px) {
   .sales-point h2 {
     font-size: 1.5rem; } }
+
+.promo-container {
+  display: flex;
+  flex-direction: column; }
+
+.title-box {
+  text-align: center;
+  background: #d31869;
+  color: white;
+  padding: 2em;
+  margin: 1em auto 0 auto;
+  max-width: 90%;
+  transform: translateY(30%); }
+
+.title-box h1,
+.promo-intro h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.promo-intro {
+  text-align: left;
+  background: #048ca8;
+  color: white;
+  padding: 6em 1em; }
+  .promo-intro h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1; }
+
+.form-container {
+  margin-top: 5em; }
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: flex-start; }
+    .form-container form input {
+      width: 100%;
+      flex: 1 1 1em;
+      padding: 1em;
+      margin-bottom: 1em; }
+    .form-container form input[type="submit"] {
+      width: 100%;
+      margin: 0;
+      font-size: 1.1rem; }
+
+.promo-img {
+  display: none; }
+
+@media (min-width: 768px) {
+  .tablet-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .title-box {
+    grid-column: 1 / 4; }
+  .promo-img {
+    display: block;
+    background-image: url("../../img/phone-in-hand.jpg");
+    background-size: cover;
+    background-position: center; } }
+
+@media (min-width: 768px) {
+  .form-container {
+    margin-top: 5em; }
+    .form-container form {
+      width: 90%; }
+      .form-container form input {
+        width: 90%;
+        padding: 1em;
+        margin-bottom: 1em; }
+      .form-container form input[type="submit"] {
+        width: 90%; } }
+
+@media (min-width: 1000px) {
+  .form-container {
+    margin-top: 5em; }
+    .form-container form {
+      width: 60%; }
+      .form-container form input {
+        width: 90%;
+        padding: 1em;
+        margin-bottom: 1em; }
+      .form-container form input[type="submit"] {
+        width: 90%; } }
