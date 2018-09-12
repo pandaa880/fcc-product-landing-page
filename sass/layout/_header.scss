@@ -3,6 +3,7 @@
   left: 0;
   right: 0;
   background: linear-gradient(to right, $main, $secondary);
+  z-index: 105;
 }
 
 .header-container {
