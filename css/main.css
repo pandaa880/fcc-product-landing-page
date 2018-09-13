@@ -303,7 +303,7 @@ body {
     grid-column: 1 / 4; }
   .promo-img {
     display: block;
-    background-image: url("../../img/phone-in-hand.jpg");
+    background-image: url("https://res.cloudinary.com/pandaa/image/upload/v1536680867/FCC%20Projects/FCC%20-%20Landing%20Page/phone-in-hand.jpg");
     background-size: cover;
     background-position: center; } }
 
@@ -333,7 +333,7 @@ body {
 
 .cta {
   background-color: #16db93;
-  background-image: url("../../img/call-to-action-background.jpg");
+  background-image: url("https://res.cloudinary.com/pandaa/image/upload/v1536680823/FCC%20Projects/FCC%20-%20Landing%20Page/call-to-action-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
