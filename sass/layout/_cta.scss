@@ -1,0 +1,63 @@
+.cta {
+  background-color: $secondary;
+  background-image: url("../../img/call-to-action-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  padding: 5em 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 80%;
+  margin: 0 auto;
+  z-index: 100;
+
+  a {
+    margin: 0 auto;
+  }
+}
+
+.text-large,
+.title-large {
+  color: white;
+  text-align: center;
+}
+
+.title-large {
+  font-weight: $font-black;
+  font-size: 2.5rem;
+}
+
+// media queries
+
+@media (min-width: 768px) {
+  .cta::before,
+  .cta::after {
+    content: "";
+    display: block;
+    background: $accent;
+    position: absolute;
+    width: 100%;
+    border: 1em solid $white;
+  }
+
+  .cta::before {
+    top: 0;
+    bottom: -1em;
+    transform: skewX(60deg);
+    left: -100%;
+  }
+
+  .cta::after {
+    top: -1em;
+    bottom: 0;
+    transform: skewX(60deg);
+    right: -100%;
+  }
+}
