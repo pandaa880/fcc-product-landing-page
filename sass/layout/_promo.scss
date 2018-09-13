@@ -42,14 +42,14 @@
     flex-direction: column;
     width: 90%;
     justify-content: flex-start;
-    // align-items: center;
+    align-items: center;
 
-    input {
+    input[type="email"] {
       width: 100%;
       flex: 1 1 1em;
       padding: 1em;
       // border-radius: 5px;
-      margin-bottom: 1em;
+      margin: 1em;
     }
 
     input[type="submit"] {
@@ -93,7 +93,7 @@
       // justify-content: flex-start;
       // align-items: center;
 
-      input {
+      input[type="email"] {
         width: 90%;
         // flex: 1 1 1em;
         padding: 1em;
@@ -118,7 +118,7 @@
       // justify-content: flex-start;
       // align-items: center;
 
-      input {
+      input[type="email"] {
         width: 90%;
         // flex: 1 1 1em;
         padding: 1em;
